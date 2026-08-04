@@ -1,0 +1,75 @@
+/* ==========================
+   SIZE COMPRESSOR - GLOBAL THEME
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#07162d,#123c7a,#7b001c);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+.container{
+    width:92%;
+    max-width:420px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.title{
+    text-align:center;
+    font-size:34px;
+    font-weight:bold;
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#d8d8d8;
+    margin-bottom:30px;
+    font-size:15px;
+}
+
+.button-container{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.menu-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:58px;
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:15px;
+    background:linear-gradient(90deg,#0d6efd,#ff3b5c);
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.menu-btn:hover{
+    transform:translateY(-3px);
+}
+
+.menu-btn:active{
+    transform:scale(.97);
+  }
