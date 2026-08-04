@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor | Size Compressor</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/compressor.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="index.html" class="home-btn">🏠 Home</a>
+
+        <h1 class="title">Image Compressor</h1>
+
+        <div class="compressor-card">
+
+            <input
+                type="file"
+                id="imageFile"
+                accept="image/*"
+                hidden>
+
+            <label for="imageFile" class="upload-btn">
+                📤 Upload Image
+            </label>
+
+            <select id="quality" class="quality-select">
+                <option value="1">Very High Quality</option>
+                <option value="0.8" selected>High Quality</option>
+                <option value="0.6">Medium Quality</option>
+                <option value="0.4">Low Quality</option>
+                <option value="0.2">Very Low Quality</option>
+            </select>
+
+            <button id="compressBtn" class="action-btn">
+                Compress
+            </button>
+
+            <div class="result-box">
+
+                <p>
+                    <strong>Original Size:</strong>
+                    <span id="originalSize">0 KB</span>
+                </p>
+
+                <p>
+                    <strong>Compressed Size:</strong>
+                    <span id="compressedSize">0 KB</span>
+                </p>
+
+            </div>
+
+            <button id="downloadBtn" class="download-btn" disabled>
+                Download
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/image.js"></script>
+
+</body>
+
+</html>
