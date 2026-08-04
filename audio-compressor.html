@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Compressor | Size Compressor</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/compressor.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="index.html" class="home-btn">🏠 Home</a>
+
+        <h1 class="title">Audio Compressor</h1>
+
+        <div class="compressor-card">
+
+            <input
+                type="file"
+                id="audioFile"
+                accept="audio/*"
+                hidden>
+
+            <label for="audioFile" class="upload-btn">
+                🎵 Upload Audio
+            </label>
+
+            <select id="quality" class="quality-select">
+                <option value="high">High Quality</option>
+                <option value="medium" selected>Medium Quality</option>
+                <option value="low">Low Quality</option>
+            </select>
+
+            <button id="compressBtn" class="action-btn">
+                Compress
+            </button>
+
+            <div class="result-box">
+
+                <p>
+                    <strong>Original Size:</strong>
+                    <span id="originalSize">0 KB</span>
+                </p>
+
+                <p>
+                    <strong>Compressed Size:</strong>
+                    <span id="compressedSize">0 KB</span>
+                </p>
+
+            </div>
+
+            <button id="downloadBtn" class="download-btn" disabled>
+                Download
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/audio.js"></script>
+
+</body>
+
+              </html>
